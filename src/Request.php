@@ -49,9 +49,4 @@ class Request implements RequestContract
     {
         return $this->getMethod() === 'POST';
     }
-
-    public function getServerProtocol(): string
-    {
-        return $this->server->get('SERVER_PROTOCOL');
-    }
 }
