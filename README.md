@@ -26,7 +26,7 @@ You'll find .example files for configuration files.
 
 Install dependencies:
 
-    docker run -p 8080:8080 -v $(pwd):/var/www/html  acrossoffwest/domda-php-fpm:8.0.8.1 composer install
+    docker run -v $(pwd):/var/www/html  acrossoffwest/domda-php-fpm:8.0.8.1 composer install
 
 For running application with Docker you could run command below from `root` directory:
 
@@ -34,7 +34,7 @@ For running application with Docker you could run command below from `root` dire
 
 ## Test
 
-    docker run -p 8080:8080 -v $(pwd):/var/www/html  acrossoffwest/domda-php-fpm:8.0.8.1 ./vendor/bin/phpunit
+    docker run -v $(pwd):/var/www/html  acrossoffwest/domda-php-fpm:8.0.8.1 ./vendor/bin/phpunit
 
 ## Methods
 
