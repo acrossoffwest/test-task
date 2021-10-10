@@ -21,6 +21,7 @@ class Response
         $this->status = $status;
         return $this;
     }
+
     public function addHeader(string $key, string $value): static
     {
         $this->headers[$key] = $value;

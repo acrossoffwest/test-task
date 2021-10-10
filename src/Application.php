@@ -48,6 +48,7 @@ class Application
             'EVENT_DESCRIPTION' => $data['eventdescription']
         ]);
 
+        $filepath = $this->saveFile($uuid, $ics);
         $isSent = $this->emailClient->sendEmail(
             $data['senderemail'],
             $data['sendername'],
@@ -55,8 +56,10 @@ class Application
             $data['guestname'],
             'New event: '.$data['eventname'],
             $data['eventdescription'],
-            $this->saveFile($uuid, $ics)
+            $filepath
         );
+
+        unlink($filepath);
 
         return $this->prepareResponse($isSent);
     }
