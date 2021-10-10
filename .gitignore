@@ -1,0 +1,6 @@
+.env
+.idea
+*.log
+*.pid
+*.cache
+vendor
