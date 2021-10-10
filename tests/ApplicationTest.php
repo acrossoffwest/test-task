@@ -3,7 +3,7 @@
 namespace Tests;
 
 use App\Application;
-use App\Request;
+use App\Http\Request;
 
 
 class ApplicationTest extends TestCase

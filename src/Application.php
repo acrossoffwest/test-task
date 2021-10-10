@@ -2,11 +2,13 @@
 
 namespace App;
 
+use App\Email\Client;
+use App\Http\Response;
 use App\Contracts\RequestContract;
 
 class Application
 {
-    private EmailClient $emailClient;
+    private Client $emailClient;
     protected array $fields = [
         'sendername',
         'senderemail',
@@ -19,7 +21,7 @@ class Application
 
     public function __construct(protected RequestContract $request)
     {
-        $this->emailClient = new EmailClient();
+        $this->emailClient = new Client();
     }
 
     public static function run(RequestContract $request): ?string

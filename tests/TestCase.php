@@ -2,9 +2,8 @@
 
 namespace Tests;
 
-use App\EmailClient;
-use PHPUnit\Framework\TestCase as PHPUnitTestCase;
 use Dotenv\Dotenv;
+use PHPUnit\Framework\TestCase as PHPUnitTestCase;
 
 
 class TestCase extends PHPUnitTestCase

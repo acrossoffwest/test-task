@@ -1,10 +1,10 @@
 <?php
 
-namespace App;
+namespace App\Email;
 
 use PHPMailer\PHPMailer\PHPMailer;
 
-class EmailClient
+class Client
 {
     public function sendEmail(string $senderEmail, string $senderName, string $recipientEmail, string $recipientName, string $subject, string $body, string $attachmentFilepath): bool
     {

@@ -12,7 +12,7 @@
             "Tests\\": "tests/"
         },
         "files": [
-            "helpers/helpers.php"
+          "src/Helpers/helpers.php"
         ]
     },
     "require": {

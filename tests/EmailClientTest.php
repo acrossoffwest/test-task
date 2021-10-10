@@ -2,15 +2,14 @@
 
 namespace Tests;
 
-use App\EmailClient;
-use Dotenv\Dotenv;
+use App\Email\Client;
 
 
 class EmailClientTest extends TestCase
 {
     public function testEmailSend()
     {
-        $client = new EmailClient();
+        $client = new Client();
 
         $this->assertTrue($client->sendEmail(
             $_ENV['DEFAULT_EMAIL'],

@@ -2,9 +2,9 @@
 
 require_once "../vendor/autoload.php";
 
-use App\Request;
-use App\Response;
 use App\Application;
+use App\Http\Request;
+use App\Http\Response;
 
 $dotenv = Dotenv\Dotenv::createImmutable(realpath(__DIR__.'/..'));
 $dotenv->load();

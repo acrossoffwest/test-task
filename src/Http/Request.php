@@ -1,9 +1,9 @@
 <?php
 
-namespace App;
+namespace App\Http;
 
+use App\Helpers\ArrayMapper;
 use App\Contracts\RequestContract;
-
 
 class Request implements RequestContract
 {
